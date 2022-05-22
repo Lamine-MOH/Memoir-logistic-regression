@@ -1,0 +1,76 @@
+section.bubble-background {
+    width: 100vw;
+    height: 100vh;
+    background: #00172e;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -100;
+}
+
+section.bubble-background .circle {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    opacity: 0.2;
+
+    /* clip-path: polygon(33% 0, 66% 0, 100% 33%, 100% 66%, 66% 100%, 33% 100%, 0 66%, 0 33%); */
+
+    position: absolute;
+    /* left: 100%; */
+    transform: translate(-100%);
+
+    mix-blend-mode: screen;
+}
+
+section.bubble-background .circle:nth-child(1),
+section.bubble-background .circle:nth-child(11) ,
+section.bubble-background .circle:nth-child(21) {
+    background: orangered;
+}
+section.bubble-background .circle:nth-child(2),
+section.bubble-background .circle:nth-child(12) ,
+section.bubble-background .circle:nth-child(22) {
+    background: red;
+}
+section.bubble-background .circle:nth-child(3),
+section.bubble-background .circle:nth-child(13) ,
+section.bubble-background .circle:nth-child(23) {
+    background: green;
+}
+section.bubble-background .circle:nth-child(4),
+section.bubble-background .circle:nth-child(14) ,
+section.bubble-background .circle:nth-child(24) {
+    background: yellow;
+}
+section.bubble-background .circle:nth-child(5),
+section.bubble-background .circle:nth-child(15) ,
+section.bubble-background .circle:nth-child(25) {
+    background: blue;
+}
+section.bubble-background .circle:nth-child(6),
+section.bubble-background .circle:nth-child(16) ,
+section.bubble-background .circle:nth-child(26) {
+    background: brown;
+}
+section.bubble-background .circle:nth-child(7),
+section.bubble-background .circle:nth-child(17) ,
+section.bubble-background .circle:nth-child(27) {
+    background: #ff002b;
+}
+section.bubble-background .circle:nth-child(8),
+section.bubble-background .circle:nth-child(18) ,
+section.bubble-background .circle:nth-child(28) {
+    background: lime;
+}
+section.bubble-background .circle:nth-child(9),
+section.bubble-background .circle:nth-child(19) ,
+section.bubble-background .circle:nth-child(29) {
+    background: purple;
+}
+section.bubble-background .circle:nth-child(10),
+section.bubble-background .circle:nth-child(20) ,
+section.bubble-background .circle:nth-child(30) {
+    background: gray;
+}

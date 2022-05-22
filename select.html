@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Select features</title>
+        <link rel="stylesheet" href="select.css" />
+    </head>
+    <body>
+        <section class="features">
+            <div class="welcome hide">
+                <h2 style="--i: 0">Welcome to our Hart Disease module</h2>
+
+                <p style="--i: 1">
+                    We hade use machine learning to create a module can check if
+                    you have a chance to get a Hart Disease
+                </p>
+
+                <p style="--i: 2">
+                    We will ask you 17 question about your healthy properties
+                    and same of your habits
+                </p>
+
+                <p style="--i: 3">
+                    After you finish filling your information's click the submit
+                    button and we well calculate you result
+                </p>
+
+                <button style="--i: 1">start the test</button>
+            </div>
+
+            <form action="result.html" class="active">
+                <h1>Select your Information's</h1>
+
+                <div class="features-container">
+                    <!-- Sex -->
+                    <div class="page active">
+                        <img src="img/image (8).jpg" alt="" />
+                        <h2>Gender</h2>
+
+                        <p>What is your Gender?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="sex"
+                                    id="sex-1"
+                                    value="1"
+                                    checked
+                                />
+                                <label for="sex-1">Male</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="sex"
+                                    id="sex-2"
+                                    value="2"
+                                />
+                                <label for="sex-2">Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Age -->
+                    <div class="page">
+                        <img src="img/image (9).jpg" alt="" />
+                        <h2>Age</h2>
+
+                        <p>Set your Age</p>
+
+                        <div class="input-container-2">
+                            <div class="range">
+                                <div class="value-container">
+                                    <div class="value">0</div>
+                                </div>
+
+                                <div class="field">
+                                    <span>0</span>
+                                    <input
+                                        type="range"
+                                        name="age"
+                                        min="0"
+                                        max="100"
+                                        value="0"
+                                    />
+                                    <span>100</span>
+
+                                    <div class="progress-empty"></div>
+                                    <div class="progress-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Race -->
+                    <div class="page">
+                        <img src="img/image (10).jpg" alt="" />
+                        <h2>Race</h2>
+
+                        <p>Select your Race</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="race"
+                                    id="race-1"
+                                    value="1"
+                                    checked
+                                />
+                                <label for="race-1">White</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="race"
+                                    id="race-2"
+                                    value="2"
+                                />
+                                <label for="race-2">Black</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="race"
+                                    id="race-3"
+                                    value="3"
+                                />
+                                <label for="race-3"
+                                    >American Indian/Alaskan Native</label
+                                >
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="race"
+                                    id="race-4"
+                                    value="4"
+                                />
+                                <label for="race-4">Asian</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="race"
+                                    id="race-5"
+                                    value="5"
+                                />
+                                <label for="race-5">Hispanic</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="race"
+                                    id="race-6"
+                                    value="6"
+                                />
+                                <label for="race-6">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Physical Health -->
+                    <div class="page">
+                        <img src="img/image (5).jpg" alt="" />
+                        <h2>Physical Health</h2>
+
+                        <p>
+                            In the last 30 days, How many days you hade good
+                            Physical Health?
+                        </p>
+
+                        <div class="input-container-2">
+                            <div class="range">
+                                <div class="value-container">
+                                    <div class="value">0</div>
+                                </div>
+
+                                <div class="field">
+                                    <span>0</span>
+                                    <input
+                                        type="range"
+                                        min="0"
+                                        max="30"
+                                        value="0"
+                                        name="physicalHealth"
+                                    />
+                                    <span>30</span>
+
+                                    <div class="progress-empty"></div>
+                                    <div class="progress-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mental Health -->
+                    <div class="page">
+                        <img src="img/image (6).jpg" alt="" />
+                        <h2>Mental Health</h2>
+
+                        <p>
+                            In the last 30 days, How many days you hade good
+                            Mental Health?
+                        </p>
+
+                        <div class="input-container-2">
+                            <div class="range">
+                                <div class="value-container">
+                                    <div class="value">0</div>
+                                </div>
+
+                                <div class="field">
+                                    <span>0</span>
+                                    <input
+                                        type="range"
+                                        min="0"
+                                        max="30"
+                                        value="0"
+                                        name="mentalHealth"
+                                    />
+                                    <span>30</span>
+
+                                    <div class="progress-empty"></div>
+                                    <div class="progress-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gen Health -->
+                    <div class="page">
+                        <img src="img/image (13).jpg" alt="" />
+                        <h2>Gen Health</h2>
+
+                        <p>What is your Gen Health level?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="genHealth"
+                                    id="genHealth-1"
+                                    value="1"
+                                    checked
+                                />
+                                <label for="genHealth-1">Poor</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="genHealth"
+                                    id="genHealth-2"
+                                    value="2"
+                                />
+                                <label for="genHealth-2">Fair</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="genHealth"
+                                    id="genHealth-3"
+                                    value="3"
+                                />
+                                <label for="genHealth-3">Good</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="genHealth"
+                                    id="genHealth-4"
+                                    value="4"
+                                />
+                                <label for="genHealth-4">Very good</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="genHealth"
+                                    id="genHealth-5"
+                                    value="5"
+                                />
+                                <label for="genHealth-5">Excellent</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sleep Time -->
+                    <div class="page">
+                        <img src="img/image (14).jpg" alt="" />
+                        <h2>Sleep Time</h2>
+
+                        <p>
+                            On average, how many hours of sleep do you get in a
+                            24-hour period?
+                        </p>
+
+                        <div class="input-container-2">
+                            <div class="range">
+                                <div class="value-container">
+                                    <div class="value">0</div>
+                                </div>
+
+                                <div class="field">
+                                    <span>0</span>
+                                    <input
+                                        type="range"
+                                        min="0"
+                                        max="24"
+                                        value="0"
+                                        name="sleepTime"
+                                    />
+                                    <span>24</span>
+
+                                    <div class="progress-empty"></div>
+                                    <div class="progress-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Physical Activity -->
+                    <div class="page">
+                        <img src="img/image (12).jpg" alt="" />
+                        <h2>Physical Activity</h2>
+
+                        <p>Do you do Physical Activity?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="physicalActivity"
+                                    id="physicalActivity-0"
+                                    value="0"
+                                    checked
+                                />
+                                <label for="physicalActivity-0">No</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="physicalActivity"
+                                    id="physicalActivity-1"
+                                    value="1"
+                                />
+                                <label for="physicalActivity-1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BMI -->
+                    <div class="page">
+                        <img src="img/image (1).jpg" alt="" />
+                        <h2>BMI</h2>
+
+                        <p>Enter your body mass indictor value</p>
+
+                        <div class="input-container-2">
+                            <div class="range">
+                                <div class="value-container">
+                                    <div class="value">0</div>
+                                </div>
+
+                                <div class="field">
+                                    <span>0</span>
+                                    <input
+                                        type="range"
+                                        min="0"
+                                        max="90"
+                                        value="0"
+                                        step="0.1"
+                                        name="bmi"
+                                    />
+                                    <span>90</span>
+
+                                    <div class="progress-empty"></div>
+                                    <div class="progress-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smoking -->
+                    <div class="page">
+                        <img src="img/image (2).jpg" alt="" />
+                        <h2>Smoking</h2>
+
+                        <p>Are you a Smoker?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="smoking"
+                                    id="smoking-0"
+                                    value="0"
+                                    checked
+                                />
+                                <label for="smoking-0">No</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="smoking"
+                                    id="smoking-1"
+                                    value="1"
+                                />
+                                <label for="smoking-1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alcohol Drinking -->
+                    <div class="page">
+                        <img src="img/image (3).jpg" alt="" />
+                        <h2>Alcohol Drinking</h2>
+
+                        <p>Do you drink Alcohol?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="alcohol"
+                                    id="alcohol-0"
+                                    value="0"
+                                    checked
+                                />
+                                <label for="alcohol-0">No</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="alcohol"
+                                    id="alcohol-1"
+                                    value="1"
+                                />
+                                <label for="alcohol-1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stroke -->
+                    <div class="page">
+                        <img src="img/image (4).jpg" alt="" />
+                        <h2>Stroke</h2>
+
+                        <p>Do you have Stroke?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="stroke"
+                                    id="stroke-0"
+                                    value="0"
+                                    checked
+                                />
+                                <label for="stroke-0">No</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="stroke"
+                                    id="stroke-1"
+                                    value="1"
+                                />
+                                <label for="stroke-1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diff Walking -->
+                    <div class="page">
+                        <img src="img/image (7).jpg" alt="" />
+                        <h2>Diff Walking</h2>
+
+                        <p>
+                            Do you have serious difficulty walking or climbing
+                            stairs?
+                        </p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="diffWalking"
+                                    id="diffWalking-0"
+                                    value="0"
+                                    checked
+                                />
+                                <label for="diffWalking-0">No</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="diffWalking"
+                                    id="diffWalking-1"
+                                    value="1"
+                                />
+                                <label for="diffWalking-1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diabetic -->
+                    <div class="page">
+                        <img src="img/image (11).jpg" alt="" />
+                        <h2>Diabetic</h2>
+
+                        <p>Do you have Diabetic?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="diabetic"
+                                    id="diabetic-0"
+                                    value="0"
+                                    checked
+                                />
+                                <label for="diabetic-0">No</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="diabetic"
+                                    id="diabetic-1"
+                                    value="1"
+                                />
+                                <label for="diabetic-1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Asthma -->
+                    <div class="page">
+                        <img src="img/image (15).jpg" alt="" />
+                        <h2>Asthma</h2>
+
+                        <p>Do you have Asthma?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="asthma"
+                                    id="asthma-0"
+                                    value="0"
+                                    checked
+                                />
+                                <label for="asthma-0">No</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="asthma"
+                                    id="asthma-1"
+                                    value="1"
+                                />
+                                <label for="asthma-1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kidney Disease -->
+                    <div class="page">
+                        <img src="img/image (16).jpg" alt="" />
+                        <h2>Kidney Disease</h2>
+
+                        <p>Do you have Kidney Disease?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="kidneyDisease"
+                                    id="kidneyDisease-0"
+                                    value="0"
+                                    checked
+                                />
+                                <label for="kidneyDisease-0">No</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="kidneyDisease"
+                                    id="kidneyDisease-1"
+                                    value="1"
+                                />
+                                <label for="kidneyDisease-1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skin Cancer -->
+                    <div class="page">
+                        <img src="img/image (17).jpg" alt="" />
+                        <h2>Skin Cancer</h2>
+
+                        <p>Do you have Skin Cancer?</p>
+
+                        <div class="input-container-1">
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="skinCancer"
+                                    id="skinCancer-0"
+                                    value="0"
+                                    checked
+                                />
+                                <label for="skinCancer-0">No</label>
+                            </div>
+                            <div class="input">
+                                <input
+                                    type="radio"
+                                    name="skinCancer"
+                                    id="skinCancer-1"
+                                    value="1"
+                                />
+                                <label for="skinCancer-1">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="switch-buttons">
+                    <button type="button" class="prev disable">previews</button>
+                    <div class="numbering">
+                        <div class="pages-dots">
+                            <div class="dot active" title="Gender"></div>
+                            <div class="dot" title="Age"></div>
+                            <div class="dot" title="Race"></div>
+                            <div class="dot" title="Physical Health"></div>
+                            <div class="dot" title="Mental Health"></div>
+                            <div class="dot" title="Gen Health"></div>
+                            <div class="dot" title="Sleep Time"></div>
+                            <div class="dot" title="Physical Activity"></div>
+                            <div class="dot" title="BMI"></div>
+                            <div class="dot" title="Smoking"></div>
+                            <div class="dot" title="Alcohol Drinking"></div>
+                            <div class="dot" title="Stroke"></div>
+                            <div class="dot" title="Diff Walking"></div>
+                            <div class="dot" title="Diabetic"></div>
+                            <div class="dot" title="Asthma"></div>
+                            <div class="dot" title="Kidney Disease"></div>
+                            <div class="dot" title="Skin Cancer"></div>
+                        </div>
+                        <p class="page-number"></p>
+                    </div>
+                    <button type="button" class="next"></button>
+                </div>
+            </form>
+        </section>
+
+        <script src="select.js"></script>
+    </body>
+</html>

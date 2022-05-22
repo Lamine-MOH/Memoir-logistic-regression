@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Hart disease module</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="bubble-background.css" />
+    </head>
+    <body>
+        <section class="bubble-background"></section>
+
+        <section class="introduction">
+            <h1>Hart disease module</h1>
+            <p class="welcome">Welcome to our module</p>
+
+            <div class="actions">
+                <a href="select.html" class="start">Start</a>
+                <a href="#more-information" class="more-info"
+                    >More Information's</a
+                >
+            </div>
+
+            <p class="info">
+                This site was created to implement a model built with a machine
+                learning technology written in Python. The goal of the model is
+                to predict the possibility of a person developing heart disease
+                based on his information and health habits, the accuracy rate of
+                this model reaches 74%.
+            </p>
+        </section>
+
+        <section class="information">
+            <h2>More information's</h2>
+
+            <p class="information" id="more-information">
+                This model is built with the logistic regression technique,
+                which is one of the algorithms of binary classification in
+                machine learning, where it was relied on a set of statistics
+                consisting of 45,746 cases (patients and healthy), where each
+                case is based on 17 features to determine the possibility of
+                infection followed by the result <br />
+                Here are more details about these features
+            </p>
+
+            <div class="features">
+                <!-- BMI -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (1).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>BMI</h3>
+
+                        <p>Body Mass Index (BMI)</p>
+                    </div>
+                </div>
+
+                <!-- Smoking -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (2).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Smoking</h3>
+
+                        <p>
+                            Have you smoked at least 100 cigarettes in your
+                            entire life? [Note: 5 packs = 100 cigarettes]
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Alcohol Drinking -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (3).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Alcohol Drinking</h3>
+
+                        <p>
+                            Heavy drinkers (adult men having more than 14 drinks
+                            per week and adult women having more than 7 drinks
+                            per week
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stroke -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (4).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Stroke</h3>
+
+                        <p>(Ever told) (you had) a stroke?</p>
+                    </div>
+                </div>
+
+                <!-- Physical Health -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (5).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Physical Health</h3>
+
+                        <p>
+                            Now thinking about your physical health, which
+                            includes physical illness and injury, for how many
+                            days during the past 30 days was your physical
+                            health not good? (0-30 days)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mental Health -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (6).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Mental Health</h3>
+
+                        <p>
+                            Thinking about your mental health, for how many days
+                            during the past 30 days was your mental health not
+                            good? (0-30 days)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Diff Walking -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (7).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Diff Walking</h3>
+
+                        <p>
+                            Do you have serious difficulty walking or climbing
+                            stairs?
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sex -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (8).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Sex</h3>
+
+                        <p>Are you male or female?</p>
+                    </div>
+                </div>
+
+                <!-- Age Category -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (9).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Age Category</h3>
+
+                        <p>Fourteen-level age category</p>
+                    </div>
+                </div>
+
+                <!-- Race -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (10).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Race</h3>
+
+                        <p>Imputed race/ethnicity value</p>
+                    </div>
+                </div>
+
+                <!-- Diabetic -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (11).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Diabetic</h3>
+
+                        <p>(Ever told) (you had) diabetes?</p>
+                    </div>
+                </div>
+
+                <!-- Physical Activity -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (12).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Physical Activity</h3>
+
+                        <p>
+                            Adults who reported doing physical activity or
+                            exercise during the past 30 days other than their
+                            regular job
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gen Health -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (13).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Gen Health</h3>
+
+                        <p>Would you say that in general your health is...</p>
+                    </div>
+                </div>
+
+                <!-- Sleep Time -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (14).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Sleep Time</h3>
+
+                        <p>
+                            On average, how many hours of sleep do you get in a
+                            24-hour period?
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Asthma -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (15).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Asthma</h3>
+
+                        <p>(Ever told) (you had) asthma?</p>
+                    </div>
+                </div>
+
+                <!-- Kidney Disease -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (16).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Kidney Disease</h3>
+
+                        <p>
+                            Not including kidney stones, bladder infection or
+                            incontinence, were you ever told you had kidney
+                            disease?
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Skin Cancer -->
+                <div class="feature">
+                    <div class="img">
+                        <img src="img/image (17).jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>Skin Cancer</h3>
+
+                        <p>(Ever told) (you had) skin cancer?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h3>About Us</h3>
+
+            <div class="container">
+                <div class="img">
+                    <img src="img/kasdi.png" alt="" />
+                </div>
+
+                <p>
+                    This program was created by a group of 3 year media
+                    university students at Kasdi Merbah University - Ouargla -
+                    as part of the graduation project in the 2021-2022 academic
+                    year under the title Prediction of heart disease using
+                    logistic regression.
+                </p>
+
+                <div class="links">
+                    <a href="select.html">Start the test</a>
+                    <a
+                        href="https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease"
+                        >DataSet</a
+                    >
+                    <a href="https://github.com/MOH-ops/Logistic-regration"
+                        >Source Code</a
+                    >
+                </div>
+            </div>
+        </footer>
+
+        <script src="bubble-background.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
