@@ -57,6 +57,7 @@ section.introduction h1 {
     font-size: 4rem;
     color: #fff;
     text-align: center;
+    text-transform: capitalize;
 }
 
 section.introduction p {

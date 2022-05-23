@@ -22,8 +22,8 @@ function writeLetter() {
             writeLetter();
         }, endWritingDelay);
     } else {
-        let delay =
-            content[lettersPointer] == " " ? wordsDelay : lettersDelay;
+        // const delay = content[lettersPointer] == " " ? wordsDelay : lettersDelay;
+        const delay = lettersDelay;
 
         setTimeout(() => {
             writeLetter();
